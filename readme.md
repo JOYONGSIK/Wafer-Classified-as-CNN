@@ -26,7 +26,7 @@ Check -> scripts/build :D
 ```
 cd .. 
 
-docker run --name wafer-classified-as-cnn -v $(pwd):/Wafer-Classified-as-CNN -dit --ipc=host wafer-classified-as-cnn:latest 
+docker run --name wafer-classified-as-cnn --gpus all -v $(pwd):/Wafer-Classified-as-CNN -dit --ipc=host wafer-classified-as-cnn:latest 
 ```
 
 - Docker Attach
