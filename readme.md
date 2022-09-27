@@ -50,7 +50,7 @@ pip install -e "."
 <hr>
 
 - Data 준비 ? 
-    - data 폴더에서 train_df.csv, test_df.csv, image_data(Folder)를 넣고, 아래 코드 실행!
+    - data 폴더에서 image_data(Folder)를 넣고, 아래 코드 실행!
     ```sh 
-    sh scripts/splitfolders.sh
+    sh scripts/split.sh
     ```
