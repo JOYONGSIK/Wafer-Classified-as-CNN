@@ -1,0 +1,1 @@
+docker run --name wafer-classified-as-cnn --gpus all -v $(pwd):/Wafer-Classified-as-CNN -dit --ipc=host wafer-classified-as-cnn:latest 

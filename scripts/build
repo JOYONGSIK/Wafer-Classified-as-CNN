@@ -1,0 +1,1 @@
+docker build -t wafer-classified-as-cnn:latest .

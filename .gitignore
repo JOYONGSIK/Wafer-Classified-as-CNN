@@ -1,0 +1,8 @@
+*.egg-info
+.eggs
+venv
+cache
+__pycache__
+.DS_Store
+data
+test.py
