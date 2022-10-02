@@ -5,5 +5,5 @@ cache
 __pycache__
 .DS_Store
 data/train
-data/val
+data/valid
 test.py

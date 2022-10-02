@@ -5,7 +5,7 @@ class BasicBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
         super().__init__()
 
-        # BatchNorm에 bias가 포함되어 있으므로, conv2d는 bias=False로 설정합니다.
+        # BatchNorm에 bias가 포함되어 있으므로, conv2d는 bias=False로 설정~~ 홍용민 메롱~~
         self.residual_function = nn.Sequential(
             nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=1, bias=False),
             nn.BatchNorm2d(out_channels),
