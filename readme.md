@@ -57,3 +57,6 @@ pip install -e "."
 
 - 평균과 표준편차로 이미지 normalization을 진행하는 코드? [dataset.py](src/wafer/dataset/dataset.py)에서 `get_mean_std` 확인 가능! 
 
+<br>
+
+# 정리는 내일..
