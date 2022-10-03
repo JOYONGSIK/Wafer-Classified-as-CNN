@@ -8,3 +8,4 @@ data/train
 data/valid
 test.py
 static
+data/data.zip
