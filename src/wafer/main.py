@@ -3,7 +3,6 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt 
 
-from wafer.core.resnet import resnet34, resnet50, resnet101 
 from wafer.wafer_dataset.dataset import Dataset
 from wafer.train import train_val
 from wafer.parameters import ResNetParameters
@@ -14,5 +13,6 @@ from wafer.config import gpu_setting
 
 device =gpu_setting.device
 
+# Choose resnet34, resnet50, resnet101 
 model, params_train = ResNetParameters('Resnet34')
 model, loss_hist, metric_hist = train_val(model, params_train)
