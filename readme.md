@@ -63,10 +63,23 @@ pip install -e "."
     sh scripts/split.sh
     ```
 
+- GPU 준비 ? 
+    - [config.py](src/wafer/config.py) 에서 gpu_setting 변경! 
+
+    ``` python
+    class gpu_setting:
+        device = torch.device('gpu' if torch.cuda.is_available() else 'cpu')
+    # 제 컴퓨터는 m1 이므로, 'mps' 로 설정 :)
+    ```
+
 - 평균과 표준편차로 이미지 normalization을 진행하는 코드? [dataset.py](src/wafer/dataset/dataset.py)에서 `get_mean_std` 확인 가능! 
 - Show Grid? [showgrid.py](src/wafer/utils/showgrid.py)에서 확인 가능! 
+
+<br><img src="data/static/show_grid.jpg" width="100%" height="50%">
+
 - Early Stopping? [earlystop.py](src/wafer/utils/earlystop.py)에서 확인 가능!
-- ResNet34, 50, 101로 가볍게 구현. <b>2epochs, Accuracy 96% 도달.</b>
+- Parameters? [parameter.py](src/wafer/parameters.py)에서 확인 가능!
+- ResNet34, 50, 101로 가볍게 구현. <b>ResNet34, 2epochs, Accuracy 96% 도달.</b>
 
 ```python 
 print("Thank you, :D")
