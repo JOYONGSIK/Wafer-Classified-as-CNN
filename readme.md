@@ -1,12 +1,20 @@
 ## NOTICE
 - <b>용민아, 최우수상 축하한다</b> 👋  
 
+
+## NOTICE-2
+- <b>Docker 부분을 잘라냈습니다 🫠</b> 
+
+
 <hr>
 
 # Wafer-Classified-as-CNN
 
 - 반도체 웨이퍼를 분류하기 위한 CNN Repo.<br>
-*(Repo, Classifying Semiconductor Wafers)*
+*(Repo, Classifying Semiconductor Wafers)* 
+> 인하대학교 산업경영공학과 <b>Tactics Lab.</b> / BaseLine Code for Mr.Hong :D <br>
+Tactics Lab. 화이팅~ 🔥🔥🔥🔥🔥🔥
+
 
 - 버전 관리 및 배포를 편하게 하기 위해서, docker 사용.<br>
 *(Use docker, For ease of Vesion management & deployment)*
@@ -56,7 +64,10 @@ pip install -e "."
     ```
 
 - 평균과 표준편차로 이미지 normalization을 진행하는 코드? [dataset.py](src/wafer/dataset/dataset.py)에서 `get_mean_std` 확인 가능! 
+- Show Grid? [showgrid.py](src/wafer/utils/showgrid.py)에서 확인 가능! 
+- Early Stopping? [earlystop.py](src/wafer/utils/earlystop.py)에서 확인 가능!
+- ResNet34, 50, 101로 가볍게 구현. <b>2epochs, Accuracy 96% 도달.</b>
 
-<br>
-
-# 정리는 내일..
+```python 
+print("Thank you, :D")
+```
