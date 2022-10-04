@@ -4,8 +4,4 @@ venv
 cache
 __pycache__
 .DS_Store
-data/train
-data/valid
-test.py
-static
 data/data.zip

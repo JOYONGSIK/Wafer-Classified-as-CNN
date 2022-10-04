@@ -1,4 +1,4 @@
-from wafer.config import gpu_setting
+from src.wafer.config import gpu_setting
 device = gpu_setting.device
 
 # model
@@ -10,9 +10,9 @@ import torch.nn.functional as F
 from torch import optim
 from torch.optim.lr_scheduler import StepLR
 
-from wafer.core.resnet import resnet34, resnet50, resnet101 
-from wafer.wafer_dataset.dataset import Dataset
-from wafer.parameters import ResNetParameters
+from src.wafer.core.resnet import resnet34, resnet50, resnet101 
+from src.wafer.wafer_dataset.dataset import Dataset
+from src.wafer.parameters import ResNetParameters
 
 
 # function to get current lr

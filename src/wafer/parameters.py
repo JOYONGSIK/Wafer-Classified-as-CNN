@@ -4,9 +4,9 @@ import torch.nn as nn
 from torch import optim
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
-from wafer.config import gpu_setting
-from wafer.wafer_dataset.dataset import Dataset
-from wafer.core.resnet import resnet34, resnet50, resnet101 
+from src.wafer.config import gpu_setting
+from src.wafer.wafer_dataset.dataset import Dataset
+from src.wafer.core.resnet import resnet34, resnet50, resnet101 
 
 def ResNetParameters(model):
     device = gpu_setting.device
